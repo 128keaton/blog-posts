@@ -1,0 +1,50 @@
+<p>Thanks to <a href="https://twitter.com/coolbooter">Coolbooter</a>, we can now downgrade to any capable versions that our 32-bit iDevices can run (iPad 2-4, iPhone 4-5c), but what if you have an iPhone that is iCloud locked?</p>
+
+<div class="notice--info">
+  
+<h4 id="note">Note:</h4>
+<p>Now, this isn’t a ‘work-around’ per-se, just a way to get to the homescreen. Activation and whatnot is NOT guaranteed with this method, and you need to have the phone already jailbroken and you need to have homescreen access, i.e. no passcode. Coolbooter is in beta. BETA! It might break your phone.</p>
+
+<p>Also, this has only been tested on iOS 6. ymmv.</p>
+
+</div>
+
+<h2 id="step-1---installing-coolbooter">Step 1 - Installing Coolbooter.</h2>
+
+<p>If you haven’t already, add the Coolbooter repo to Cydia (https://coolbooter.com) and install the Coolbooter Beta package. It’s pretty straightforward.</p>
+
+<h2 id="step-2---d-d-d-downgrading">Step 2 - D-d-d-downgrading.</h2>
+
+<p>Select the version you want to install (once again, only tested on iOS 6) and install. Coolbooter takes a decent amount of time to download, parition and move everything into place. Then tap ‘Boot’ and boot into iOS 6. Run through the setup to verify that you can’t log in to the locked account.</p>
+
+<h2 id="step-3---installing-openssh-because-if-you-didnt-you-are-doing-it-wrong">Step 3 - Installing OpenSSH (because if you didn’t you are doing it wrong).</h2>
+
+<p>Boot back into your main OS (just shut down and turn back on) and install ‘OpenSSH’ in Cydia. If you don’t know how to SSH into your own device, then stop right here and contemplate your life choices and return at a later date.</p>
+
+<h3 id="note-change-your-openssh-root-password-using-passwd">Note: change your OpenSSH root password using <code class="highlighter-rouge">passwd</code></h3>
+
+<div id="stahp">
+
+## Step 3a - Contemplating your life choices.
+
+Are you one of those people who post on /r/jailbreak like its your personal Google? Stop it. You are bad. Do you reply to @qwertyuiop's tweets asking 'eta wen' or other begging crap? Stop it. You are bad.
+
+</div>
+
+<h2 id="step-4---mounting-the-secondary-partition">Step 4 - Mounting the secondary partition.</h2>
+
+<p>First, list your devices or partitions in your SSH session with <code class="highlighter-rouge">ls /dev/</code>, I’d bet some serious money your iOS 6 partition is something like <code class="highlighter-rouge">/dev/disk0s1s3</code>. If a mounting point (e.g. <code class="highlighter-rouge">/mnt</code>) doesn’t exist, make one with <code class="highlighter-rouge">mkdir /mnt</code>. Finally, run:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"> mount -t hfs /dev/disk0s1s3 /mnt</code></pre></figure>
+
+<p>Substitute <code class="highlighter-rouge">/dev/disk0s1s3</code> for your device.</p>
+
+<h2 id="step-5---removing-the-setup-app">Step 5 - Removing the setup app.</h2>
+
+<p>We’re almost DUNNN. Just run:</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="nb">cd</span> /mnt/Applications <span class="o">&amp;&amp;</span> rm -rf Setup.app</code></pre></figure>
+
+<p>Boot back into your secondary OS and you should see a lockscreen instead of a setup screen</p>
+
+<p>If you broke some stuff, sorry, your fault</p>

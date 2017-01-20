@@ -1,0 +1,37 @@
+<h2 id="prerequisites">Prerequisites:</h2>
+
+<ul>
+  <li>Xcode</li>
+  <li>Xcode Command Line Utilities</li>
+  <li>Homebrew</li>
+  <li>wget</li>
+</ul>
+
+<h3 id="step-1">Step 1:</h3>
+
+<p>Install glib (a QEMU requirement) and pixman (since the QEMU variant is borked):</p>
+
+<p><code class="highlighter-rouge">brew install glib pixman</code></p>
+
+<h3 id="step-2">Step 2:</h3>
+
+<p>Fetch QEMU from their repository:</p>
+
+<p><code class="highlighter-rouge">wget http://wiki.qemu-project.org/download/qemu-2.5.0.tar.bz2</code></p>
+
+<p>and unzip:</p>
+
+<p><code class="highlighter-rouge">tar xvjf qemu-2.5.0.tar.bz2 &amp;&amp; cd qemu-2.5.0</code></p>
+
+<p>then remove the broken pixman library:</p>
+
+<p><code class="highlighter-rouge">rm -r pixman</code></p>
+
+<h3 id="step-3">Step 3:</h3>
+
+<p>Build!</p>
+
+<p><code class="highlighter-rouge">./configure &amp;&amp; make &amp;&amp; sudo make install</code></p>
+
+<p>Done!</p>
+

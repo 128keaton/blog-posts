@@ -2,7 +2,7 @@
 layout: post
 title: "iCloud Locked Downgrading"
 date: "2016-12-28 23:58:24 -0600"
-head-image: https://i.sli.mg/aDpt3u.jpg
+#head-image: https://i.sli.mg/aDpt3u.jpg
 description: "Downgrading an iCloud locked phone."
 ---
 
@@ -38,9 +38,13 @@ Boot back into your main OS (just shut down and turn back on) and install 'OpenS
 
 ### Note: change your OpenSSH root password using `passwd`
 
+<div id="stahp">
+
 ## Step 3a - Contemplating your life choices.
 
 Are you one of those people who post on /r/jailbreak like its your personal Google? Stop it. You are bad. Do you reply to @qwertyuiop's tweets asking 'eta wen' or other begging crap? Stop it. You are bad.
+
+</div>
 
 ## Step 4 - Mounting the secondary partition.
 

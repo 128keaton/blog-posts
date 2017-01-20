@@ -2,7 +2,7 @@
 layout: "post"
 title: "Baking a 2007 MacBook Pro's Logic Board"
 date: "2016-05-30 22:47"
-head-image: https://i.sli.mg/BRHoZU.jpg
+#head-image: https://i.sli.mg/BRHoZU.jpg
 ---
 It is not everyday you see someone putting an expensive piece of technology inside of a conventional household oven. But then again, its is not everyday you have to reflow a component.
 *rock intro*

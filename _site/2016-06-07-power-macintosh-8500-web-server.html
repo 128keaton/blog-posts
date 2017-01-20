@@ -1,0 +1,22 @@
+<p>Well, I went and did it. I made my Power Macintosh 8500 into a Debian web server.
+Installing Debian was a bit harder than expected, but thanks to the BootX software, it was eventually installed. The biggest issue was just getting all of the kernels in place.
+Here is how my setup works:</p>
+
+<ul>
+  <li>SCSI drive has a Mac OS 9.1 install, with the BootX app inside of the System Folder.</li>
+  <li>ATA card, for my CD drive, and my ATA drive containing the Debian install.</li>
+  <li>96MB of RAM in the machine, which is 6MB from the bare minimum for installing/booting Debian.
+*</li>
+</ul>
+
+<p>I basically just booted the install CD, installed Debian to the ATA drive, shut down the machine, grabbed the kernels off the ATA drive, put them into the folder for BootX, and rebooted into the ATA drive. Also, Debian wouldn’t detect my ethernet port, so I just installed a PCI-X Gigabit card with dual NICs. BootX is great, it really makes this install easier. I couldn’t get the extension to work without the ‘unexpected trap’ error. I can just boot fully into OS 9, then into Debian. You can visit the web server’s homepage here: <a href="http://play.128keaton.com:82/about/">http://play.128keaton.com:82/about/</a>.</p>
+
+<h2 id="q--a">Q &amp; A:</h2>
+
+<p><strong>Q: What about security?</strong></p>
+
+<p>A: This is literally running the latest version of Debian and Apache2.</p>
+
+<p><strong>Q: Well, why?</strong></p>
+
+<p>A: Why not? It was a lot of fun, and quite a challenge.</p>

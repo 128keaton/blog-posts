@@ -3,8 +3,6 @@ layout: "post"
 title: "My WWDC 2016 Submission"
 date: "2016-05-11 14:00"
 comments: false
-style: "apple"
-
 ---
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/HQM8DY31G6Y" frameborder="0" allowfullscreen></iframe>

@@ -4,6 +4,7 @@ title: "Mozilla's New Look"
 date: "2017-01-18 12:46:01 -0600"
 reference-url: "https://news.ycombinator.com/item?id=13425380"
 published: true
+comments: true
 ---
 {% capture quote-1 %}
 I'm a bit disappointed. Mozilla makes a couple of great things (Firefox, Rust, MDN, ...). But in contrast to their products, I have a quite bad impression of their Foundation and/or Corporation. I don't know if it is warranted or not, but I have the impression that they mostly exist to burn through the millions they get from Google for setting them as default search engine.

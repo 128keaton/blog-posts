@@ -2,7 +2,7 @@
 layout: post
 title: "Refurbishing Kindles"
 date: "2016-11-29 23:58:24 -0600"
-head-image: https://i.sli.mg/GzV0Gg.jpg
+#head-image: https://i.sli.mg/GzV0Gg.jpg
 description: "A small review of the Kindle 3, and a tale of woe."
 ---
 
