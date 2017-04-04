@@ -64,3 +64,5 @@ My takeaway is that the Mac’s future is bright.
 {{ quote-1 | markdownify }}
 -- John Gruber
 </div>
+
+**Update:** Check the [store](http://www.apple.com/shop/buy-mac/mac-pro).
